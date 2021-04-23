@@ -1,0 +1,16 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    //外框寬度及顏色
+    <stroke
+        android:width="5dip"
+        android:color="#D0D0D0" />
+    //四角彎度，數字越大越圓
+    <corners
+        android:topLeftRadius="500sp"
+        android:topRightRadius="500sp"
+        android:bottomLeftRadius="500sp"
+        android:bottomRightRadius="500sp" />
+    //按鈕背景顏色
+    <solid android:color="#D0D0D0"/>
+    //四邊留白
+    <padding android:left="10dp" android:top="10dp" android:right="10dp" android:bottom="10dp" />
+</shape>
