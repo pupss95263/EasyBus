@@ -19,6 +19,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.auth.UserInfo;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -76,7 +77,7 @@ public class Register extends AppCompatActivity {
                 mProgressBar.setVisibility(View.VISIBLE);
 
                 String fullName=mFullname.getText().toString();
-                user=new User(email, password, fullName);
+  //              user=new User(email, password, fullName);
                 RegisterUser(email,password);
             }
 
@@ -103,7 +104,7 @@ public class Register extends AppCompatActivity {
                 });
             }
         });
-
+        
         mRegistertext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
